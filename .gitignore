@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Bot not these files
+!.gitignore
+!best-practices.html
+!images/grading/*
+!images/mass-email/*
+
+# ...even if they are in subdirectories
+!*/

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Wie kann man möglichst effizient in Moodle…</title>
+<!-- 2015-10-17 Sat 11:37 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Patrick Mosby" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-light.min.css" />
+<style type="text/css"> body { background-color: #FFFBF0 } </style>
+<style type="text/css"> img { width: 100%; } </style>
+<style type="text/css"> .outline-text-2, .outline-text-3, .outline-text-4, .outline-text-5, .outline-3 > ul, .outline-4 > ol, #text-footnotes { margin-left: 20px; } </style>
+
+<script type="text/javascript" src="http://thomasf.github.io/solarized-css/org-info.min.js">
+/**
+ *
+ * @source: http://thomasf.github.io/solarized-css/org-info.min.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in http://thomasf.github.io/solarized-css/org-info.min.js.
+ *
+ * Copyright (C) 2012-2013 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in http://thomasf.github.io/solarized-css/org-info.min.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "1");
+org_html_manager.set("VIEW", "1");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Wie kann man möglichst effizient in Moodle…</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. TeilnehmerInnen per Mail erreichen?</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Wie kann ich einige oder alle meine Studierende per Email benachrichtigen?</a></li>
+<li><a href="#sec-1-2">1.2. Empfänger auswählen</a></li>
+<li><a href="#sec-1-3">1.3. Nachricht verfassen und absenden</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Abgaben meiner TeilnehmerInnen bzw. Gruppen einsehen / herunterladen?</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Alle Bewertungen einsehen</a></li>
+<li><a href="#sec-2-2">2.2. Gruppe / Tutorium für die Bewertung auswählen</a></li>
+<li><a href="#sec-2-3">2.3. Blatt für die Bewertung auswählen</a></li>
+<li><a href="#sec-2-4">2.4. Alle Abgaben innerhalb der Gruppe für das Blatt anzeigen</a></li>
+<li><a href="#sec-2-5">2.5. Abgaben-Übersicht</a></li>
+<li><a href="#sec-2-6">2.6. Bearbeitungsmöglichkeiten der Abgaben</a>
+<ul>
+<li><a href="#sec-2-6-1">2.6.1. Alle Abgaben herunterladen</a></li>
+<li><a href="#sec-2-6-2">2.6.2. Bewertungstabelle herunterladen</a></li>
+<li><a href="#sec-2-6-3">2.6.3. Bewertungstabelle hochladen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-3">3. Teilnehmer bewerten?</a>
+<ul>
+<li><a href="#sec-3-1">3.1. Alle Bewertungen einsehen</a></li>
+<li><a href="#sec-3-2">3.2. Gruppe / Tutorium für die Bewertung auswählen</a></li>
+<li><a href="#sec-3-3">3.3. Blatt für die Bewertung auswählen</a></li>
+<li><a href="#sec-3-4">3.4. Alle Abgaben innerhalb der Gruppe für das Blatt anzeigen</a></li>
+<li><a href="#sec-3-5">3.5. Abgaben-Übersicht</a></li>
+<li><a href="#sec-3-6">3.6. Bearbeitungsmöglichkeiten der Abgaben</a>
+<ul>
+<li><a href="#sec-3-6-1">3.6.1. Alle Abgaben herunterladen</a></li>
+<li><a href="#sec-3-6-2">3.6.2. Bewertungstabelle herunterladen</a></li>
+<li><a href="#sec-3-6-3">3.6.3. Bewertungstabelle hochladen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+Die Screenshots sind in einer höheren Auflösung eingebunden als sie angezeigt werden.
+</p>
+
+<p>
+Die hier beschriebenen Schritte sollten sequentiell durchgefuehrt werden.
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> TeilnehmerInnen per Mail erreichen?</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Wie kann ich einige oder alle meine Studierende per Email benachrichtigen?</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<div class="figure">
+<p><img src="images/mass-email/mass-mail-1.png" alt="mass-mail-1.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Empfänger auswählen</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<div class="figure">
+<p><img src="images/mass-email/mass-mail-2.png" alt="mass-mail-2.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Nachricht verfassen und absenden</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<div class="figure">
+<p><img src="images/mass-email/mass-mail-3.png" alt="mass-mail-3.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Abgaben meiner TeilnehmerInnen bzw. Gruppen einsehen / herunterladen?</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<b>ACHTUNG</b> Die ersten 4 Schritte sind nur Vorgeplänkel. Ab Schritt 5 wählt man
+jeweils nur noch die Gruppe aus, deren Blatt bewertet werden soll.
+</p>
+
+<p>
+<b>Die Schritte unterscheiden sich nicht von <i><a href="#sec-3">Teilnehmer bewerten?</a></i></b>
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Alle Bewertungen einsehen</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<div class="figure">
+<p><img src="images/grading/grading-1.png" alt="grading-1.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Gruppe / Tutorium für die Bewertung auswählen</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<div class="figure">
+<p><img src="images/grading/grading-2.png" alt="grading-2.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Blatt für die Bewertung auswählen</h3>
+<div class="outline-text-3" id="text-2-3">
+
+<div class="figure">
+<p><img src="images/grading/grading-3.png" alt="grading-3.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Alle Abgaben innerhalb der Gruppe für das Blatt anzeigen</h3>
+<div class="outline-text-3" id="text-2-4">
+
+<div class="figure">
+<p><img src="images/grading/grading-4.png" alt="grading-4.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Abgaben-Übersicht</h3>
+<div class="outline-text-3" id="text-2-5">
+
+<div class="figure">
+<p><img src="images/grading/grading-5.png" alt="grading-5.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> Bearbeitungsmöglichkeiten der Abgaben</h3>
+<div class="outline-text-3" id="text-2-6">
+
+<div class="figure">
+<p><img src="images/grading/grading-6.png" alt="grading-6.png" />
+</p>
+</div>
+
+<p>
+Die wichtigsten Bearbeitungsmöglichkeiten sind die folgenden:
+</p>
+</div>
+
+<div id="outline-container-sec-2-6-1" class="outline-4">
+<h4 id="sec-2-6-1"><span class="section-number-4">2.6.1</span> Alle Abgaben herunterladen</h4>
+<div class="outline-text-4" id="text-2-6-1">
+<p>
+Lädt alle Abgaben für die jeweilige Gruppe und das jeweilige Blatt als 1 ZIP-Datei herunter.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-6-2" class="outline-4">
+<h4 id="sec-2-6-2"><span class="section-number-4">2.6.2</span> Bewertungstabelle herunterladen</h4>
+<div class="outline-text-4" id="text-2-6-2">
+<p>
+Lädt eine CSV-Datei herunter, die dem Schema der angezeigten Tabelle gleicht.
+Die CSV-Datei kann z.B. in einer Tabellenkalkulation bearbeitet werden, um die
+jeweilige Bewertung und das Feedback anzugeben.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-6-3" class="outline-4">
+<h4 id="sec-2-6-3"><span class="section-number-4">2.6.3</span> Bewertungstabelle hochladen</h4>
+<div class="outline-text-4" id="text-2-6-3">
+<p>
+Nachdem man die CSV-Datei heruntergeladen und ausgefüllt hat kann man sie mit
+dieser Funktion hochladen, um die jeweilige Bewertung und ggfs. Feedback ins
+Moodle zu importieren.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Teilnehmer bewerten?</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<b>ACHTUNG</b> Die ersten 4 Schritte sind nur Vorgeplänkel. Ab Schritt 5 wählt man
+jeweils nur noch die Gruppe aus, deren Blatt bewertet werden soll.
+</p>
+
+<p>
+<b>Die Schritte unterscheiden sich nicht von <i><a href="#sec-2">Abgaben meiner TeilnehmerInnen bzw. Gruppen einsehen / herunterladen?</a></i></b>
+</p>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Alle Bewertungen einsehen</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<div class="figure">
+<p><img src="images/grading/grading-1.png" alt="grading-1.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Gruppe / Tutorium für die Bewertung auswählen</h3>
+<div class="outline-text-3" id="text-3-2">
+
+<div class="figure">
+<p><img src="images/grading/grading-2.png" alt="grading-2.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Blatt für die Bewertung auswählen</h3>
+<div class="outline-text-3" id="text-3-3">
+
+<div class="figure">
+<p><img src="images/grading/grading-3.png" alt="grading-3.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Alle Abgaben innerhalb der Gruppe für das Blatt anzeigen</h3>
+<div class="outline-text-3" id="text-3-4">
+
+<div class="figure">
+<p><img src="images/grading/grading-4.png" alt="grading-4.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Abgaben-Übersicht</h3>
+<div class="outline-text-3" id="text-3-5">
+
+<div class="figure">
+<p><img src="images/grading/grading-5.png" alt="grading-5.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="section-number-3">3.6</span> Bearbeitungsmöglichkeiten der Abgaben</h3>
+<div class="outline-text-3" id="text-3-6">
+
+<div class="figure">
+<p><img src="images/grading/grading-6.png" alt="grading-6.png" />
+</p>
+</div>
+
+<p>
+Die wichtigsten Bearbeitungsmöglichkeiten sind die folgenden:
+</p>
+</div>
+
+<div id="outline-container-sec-3-6-1" class="outline-4">
+<h4 id="sec-3-6-1"><span class="section-number-4">3.6.1</span> Alle Abgaben herunterladen</h4>
+<div class="outline-text-4" id="text-3-6-1">
+<p>
+Lädt alle Abgaben für die jeweilige Gruppe und das jeweilige Blatt als 1 ZIP-Datei herunter.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-6-2" class="outline-4">
+<h4 id="sec-3-6-2"><span class="section-number-4">3.6.2</span> Bewertungstabelle herunterladen</h4>
+<div class="outline-text-4" id="text-3-6-2">
+<p>
+Lädt eine CSV-Datei herunter, die dem Schema der angezeigten Tabelle gleicht.
+Die CSV-Datei kann z.B. in einer Tabellenkalkulation bearbeitet werden, um die
+jeweilige Bewertung und das Feedback anzugeben.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-6-3" class="outline-4">
+<h4 id="sec-3-6-3"><span class="section-number-4">3.6.3</span> Bewertungstabelle hochladen</h4>
+<div class="outline-text-4" id="text-3-6-3">
+<p>
+Nachdem man die CSV-Datei heruntergeladen und ausgefüllt hat kann man sie mit
+dieser Funktion hochladen, um die jeweilige Bewertung und ggfs. Feedback ins
+Moodle zu importieren.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

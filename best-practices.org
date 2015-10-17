@@ -1,0 +1,124 @@
+#+TITLE: Wie kann man möglichst effizient in Moodle…
+
+#+INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:0 path:http://thomasf.github.io/solarized-css/org-info.min.js
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-light.min.css" />
+
+#+HTML_HEAD: <style type="text/css"> body { background-color: #FFFBF0 } </style>
+#+HTML_HEAD: <style type="text/css"> img { width: 100%; } </style>
+#+HTML_HEAD: <style type="text/css"> .outline-text-2, .outline-text-3, .outline-text-4, .outline-text-5, .outline-3 > ul, .outline-4 > ol, #text-footnotes { margin-left: 20px; } </style>
+
+Die Screenshots sind in einer höheren Auflösung eingebunden als sie angezeigt werden.
+
+Die hier beschriebenen Schritte sollten sequentiell durchgefuehrt werden.
+
+* TeilnehmerInnen per Mail erreichen?
+
+** Wie kann ich einige oder alle meine Studierende per Email benachrichtigen?
+
+[[file:images/mass-email/mass-mail-1.png]]
+
+** Empfänger auswählen
+
+[[file:images/mass-email/mass-mail-2.png]]
+
+** Nachricht verfassen und absenden
+
+[[file:images/mass-email/mass-mail-3.png]]
+
+* Abgaben meiner TeilnehmerInnen bzw. Gruppen einsehen / herunterladen?
+
+*ACHTUNG* Die ersten 4 Schritte sind nur Vorgeplänkel. Ab Schritt 5 wählt man
+jeweils nur noch die Gruppe aus, deren Blatt bewertet werden soll.
+
+*Die Schritte unterscheiden sich nicht von /[[Teilnehmer bewerten?][Teilnehmer bewerten?]]/*
+
+** Alle Bewertungen einsehen
+
+[[file:images/grading/grading-1.png]]
+
+** Gruppe / Tutorium für die Bewertung auswählen
+
+[[file:images/grading/grading-2.png]]
+
+** Blatt für die Bewertung auswählen
+
+[[file:images/grading/grading-3.png]]
+
+** Alle Abgaben innerhalb der Gruppe für das Blatt anzeigen
+
+[[file:images/grading/grading-4.png]]
+
+** Abgaben-Übersicht
+
+[[file:images/grading/grading-5.png]]
+
+** Bearbeitungsmöglichkeiten der Abgaben
+
+[[file:images/grading/grading-6.png]]
+
+Die wichtigsten Bearbeitungsmöglichkeiten sind die folgenden:
+
+*** Alle Abgaben herunterladen
+
+Lädt alle Abgaben für die jeweilige Gruppe und das jeweilige Blatt als 1 ZIP-Datei herunter.
+
+*** Bewertungstabelle herunterladen
+
+Lädt eine CSV-Datei herunter, die dem Schema der angezeigten Tabelle gleicht.
+Die CSV-Datei kann z.B. in einer Tabellenkalkulation bearbeitet werden, um die
+jeweilige Bewertung und das Feedback anzugeben.
+
+*** Bewertungstabelle hochladen
+
+Nachdem man die CSV-Datei heruntergeladen und ausgefüllt hat kann man sie mit
+dieser Funktion hochladen, um die jeweilige Bewertung und ggfs. Feedback ins
+Moodle zu importieren.
+
+* Teilnehmer bewerten?
+
+*ACHTUNG* Die ersten 4 Schritte sind nur Vorgeplänkel. Ab Schritt 5 wählt man
+jeweils nur noch die Gruppe aus, deren Blatt bewertet werden soll.
+
+*Die Schritte unterscheiden sich nicht von /[[Abgaben meiner TeilnehmerInnen bzw. Gruppen einsehen / herunterladen?][Abgaben meiner TeilnehmerInnen bzw. Gruppen einsehen / herunterladen?]]/*
+
+** Alle Bewertungen einsehen
+
+[[file:images/grading/grading-1.png]]
+
+** Gruppe / Tutorium für die Bewertung auswählen
+
+[[file:images/grading/grading-2.png]]
+
+** Blatt für die Bewertung auswählen
+
+[[file:images/grading/grading-3.png]]
+
+** Alle Abgaben innerhalb der Gruppe für das Blatt anzeigen
+
+[[file:images/grading/grading-4.png]]
+
+** Abgaben-Übersicht
+
+[[file:images/grading/grading-5.png]]
+
+** Bearbeitungsmöglichkeiten der Abgaben
+
+[[file:images/grading/grading-6.png]]
+
+Die wichtigsten Bearbeitungsmöglichkeiten sind die folgenden:
+
+*** Alle Abgaben herunterladen
+
+Lädt alle Abgaben für die jeweilige Gruppe und das jeweilige Blatt als 1 ZIP-Datei herunter.
+
+*** Bewertungstabelle herunterladen
+
+Lädt eine CSV-Datei herunter, die dem Schema der angezeigten Tabelle gleicht.
+Die CSV-Datei kann z.B. in einer Tabellenkalkulation bearbeitet werden, um die
+jeweilige Bewertung und das Feedback anzugeben.
+
+*** Bewertungstabelle hochladen
+
+Nachdem man die CSV-Datei heruntergeladen und ausgefüllt hat kann man sie mit
+dieser Funktion hochladen, um die jeweilige Bewertung und ggfs. Feedback ins
+Moodle zu importieren.
